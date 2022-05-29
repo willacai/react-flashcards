@@ -29,13 +29,14 @@ function App() {
       <Deck 
         cardData={cardData} 
         title={title} 
-        key={(allDecks.length-1) + "-" + title}/>);
+        key={(allDecks.length-1) + "-" + title + "-deck"}/>);
   }
 
   return (
     <div className="App">
       <h1>React Flashcards</h1>
       <h2>Test deck</h2>
+      Displaying all decks:
       {allDecks}
     </div>
   );
